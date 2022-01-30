@@ -1,0 +1,145 @@
+.head {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-itsa{
+  background-color: #000;
+}
+
+
+.head-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+  visibility: hidden;
+}
+
+.imagen-head {
+  width: 392px;
+  margin-top: 5px;
+}
+
+.carousel-item {
+  height: 0 auto;
+}
+
+.carousel-item img {
+  width: 650px;
+  height: 450px;
+}
+
+.link-goo {
+  text-decoration: none;
+}
+
+.container-tag {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+}
+.card-container {
+  display: flex;
+  width: 75%;
+  height: auto;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-tag {
+  border-right: 1px solid #ddd;
+}
+
+.descripcion {
+  background: #fbfbfb;
+}
+
+.header-tag,
+.descripcion {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-tag a {
+  position: relative;
+  display: block;
+}
+
+.header-tag img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.06);
+  margin: 20px 30px;
+  transition: 0.2s;
+}
+
+.header-tag a:hover img {
+  box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-tag h4 {
+  margin-bottom: 20px;
+}
+
+.footer-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1045px) {
+  .head {
+    display: none;
+    visibility: hidden;
+  }
+  .head-mobile {
+    display: contents;
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-item img {
+    width: auto;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    width: auto;
+    height: 150px;
+  }
+  .li-cen {
+    display: none;
+    visibility: hidden;
+  }
+
+  .footer-mobile {
+    text-align: center;
+    display: contents;
+    visibility: visible;
+  }
+  .footer-mobile img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .row {
+    display: block;
+  }
+  .card-container {
+    display: block;
+    margin: auto;
+  }
+  .container-tag {
+    height: auto;
+  }
+}
